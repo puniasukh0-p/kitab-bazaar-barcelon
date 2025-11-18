@@ -1,0 +1,54 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Noto Sans Gurmukhi', sans-serif; background: #0f1624; color: white; }
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+}
+.logo { font-size: 3rem; margin-bottom: 10px; }
+h1 { font-size: 2.5rem; margin: 10px 0; }
+.tagline { font-size: 1.3rem; color: #a8d0e6; }
+
+.books-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.book-card {
+    background: rgba(255,255,255,0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    transition: 0.3s;
+    backdrop-filter: blur(10px);
+}
+.book-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+.book-card img { width: 100%; height: 280px; object-fit: cover; }
+.book-card h3 { padding: 15px 10px 5px; font-size: 1.4rem; }
+.author { color: #a8d0e6; font-size: 1rem; }
+.price { font-size: 1.6rem; font-weight: bold; color: #f4d35e; margin: 10px 0; }
+button {
+    width: 90%;
+    margin: 15px auto;
+    padding: 12px;
+    background: #f4d35e;
+    color: #000;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #0b0e17;
+    margin-top: 50px;
+}
+
